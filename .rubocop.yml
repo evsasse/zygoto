@@ -1,0 +1,12 @@
+inherit_gem:
+  rubocop-rails_config:
+    - config/rails.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-thread_safety
+  - rubocop-i18n
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

@@ -119,6 +119,9 @@ GEM
     parser (2.6.2.0)
       ast (~> 2.4.0)
     pg (1.1.4)
+    pg_query (1.1.0)
+    pghero (2.2.0)
+      activerecord
     psych (3.1.0)
     public_suffix (3.0.3)
     puma (3.12.1)
@@ -244,6 +247,8 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   marginalia
   pg (>= 0.18, < 2.0)
+  pg_query
+  pghero
   puma (~> 3.11)
   rails (~> 6.0.0.beta3)
   rubocop
@@ -265,4 +270,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   2.0.1
+   1.17.2

@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-push": "echo '\nrun `git push --no-verify ...` to skip this git hook\n' && rubocop",
+    "pre-push": "echo '\nrun `git push --no-verify ...` to skip this git hook\n' && rubocop && yarn lint",
     "post-checkout": "yarnhook",
     "post-merge": "yarnhook",
     "post-rewrite": "yarnhook"

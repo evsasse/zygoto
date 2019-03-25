@@ -1,0 +1,11 @@
+<h1 class="js--example--js example"></h1>
+<h1 class="js--example--ts example"></h1>
+<h1 class="js--example--jquery example"></h1>
+<%= react_component 'example-jsx' %>
+<%= react_component 'example-tsx' %>
+
+<script>
+  document.addEventListener('turbolinks:load', function() {
+    $('.js--example--jquery').html('Hello from jQuery!');
+  });
+</script>

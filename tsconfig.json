@@ -8,7 +8,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es5",
-    "jsx": "react"
+    "jsx": "preserve"
   },
   "exclude": [
     "**/*.spec.ts",

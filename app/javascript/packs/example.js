@@ -2,12 +2,12 @@ import '../lib/setup';
 import '../channels';
 
 // your global css
-require('../styles/application.scss');
+require('../styles/example.scss');
 
 // general components
 // select2
 // ...
 
 // context specific js
-// user-listing
-// ...
+require('../components/example/js');
+require('../components/example/ts');

@@ -1,9 +1,10 @@
 devise
 rolify
-pundit
+pundit (instead of cancancan)
 login with google
 login with facebook
-facebook account kit?
+login with github
+??? facebook account kit (login with wpp/sms)
 
 pry
 letteropener
@@ -14,17 +15,19 @@ coverage
 timecop
 capybara
 
-activeadmin
+rails_admin
 kaminari
-simpleform
+simple_form
 
 whodunnit
 papertrail
 paranoia
 x marginalia
 x pghero
+pghero query stats
 
 sidekiq
+...
 
 redis
 
@@ -33,6 +36,7 @@ whenever
 redux
 redux saga
 
+action cable
 x jquery
 x react
 x typescript
@@ -43,7 +47,9 @@ x styleName
 x scss
 x bundles
 x analyze bundle
-action cable
+
+jest
+...
 
 x husky
 x rubocop
@@ -53,7 +59,8 @@ x tslint
 pwa
 
 image upload
-thumbor?
+...
+??? thumbor
 
 container
 scalable deploy

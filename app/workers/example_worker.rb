@@ -1,7 +1,7 @@
 class ExampleWorker
   include Sidekiq::Worker
 
-  def perform()
+  def perform
     # do something
   end
 end

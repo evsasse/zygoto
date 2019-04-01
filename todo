@@ -14,6 +14,9 @@ factorygirl
 coverage
 timecop
 capybara
+database_cleaner
+vcr
+shoulda_matchers
 
 rails_admin
 kaminari

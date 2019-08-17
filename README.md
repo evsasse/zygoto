@@ -39,6 +39,12 @@ Kickstart a new Rails project.
 
 * [ ] Pry
 
+  * [ ] pry-rails, `rails c`
+
+  * [ ] pry-meta
+
+    * [ ] pry-byebug shortcuts
+
 * [ ] Admin dashboard
 
   * [ ] Impersonate Customer and User
@@ -77,6 +83,8 @@ Kickstart a new Rails project.
 
 * [ ] Redis
 
+  * [ ] redis-mutex
+
 * [ ] Sidekiq
 
   * [ ] Cron
@@ -85,9 +93,17 @@ Kickstart a new Rails project.
 
   * [ ] Link to it on Admin dashboard
 
+  * [ ] Properly reset Sidekiq::Testing
+
 * [ ] PWA
 
 * [ ] CarrierWave
+
+  * [ ] A `files` endpoint ready to receive uploads and return URLs, accessible from any subdomain
+
+    * [ ] Protection agains spam, etc
+
+    * [ ] May receive an identifier to use a custom uploader
 
 * [ ] Thumbor
 
@@ -166,6 +182,8 @@ Kickstart a new Rails project.
     * [ ] Easily change into PRO
 
 * [ ] Tests
+
+  * [ ] fakeredis
 
   * [ ] LetterOpener
 
@@ -293,3 +311,10 @@ Use [yarn-link](https://yarnpkg.com/lang/en/docs/cli/link/).
 - Back into this project folder **run** `yarn link my-ui-kit`.
 
 - This will add an symlink to your node_modules folder, and hot-reload will start to watch the changes you make on your other folder.
+
+
+## More interesting libs than can save you time
+
+- https://github.com/ankane/chartkick Easy async charts.
+
+- https://github.com/jnunemaker/flipper Easy feature flipping, with ready to go UI.

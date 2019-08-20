@@ -8,8 +8,10 @@
     "docker-bash": "docker exec -it zygoto-rails bash",
     "setup": "yarn run -s envvar-setup && yarn run -s heroku-setup",
     "envvar-setup": "EDITOR='vim' rails credentials:edit",
+    "heroku-logs": "heroku logs --tail",
+    "heroku-ssh": "heroku ps:exec",
     "heroku-clean": "heroku apps:destroy; git remote remove heroku",
-    "heroku-envvar": "heroku config:set RAILS_MASTER_KEY=`cat config/master.key` && heroku config:set RAILS_ENV=production",
+    "heroku-envvar": "heroku config:set RAILS_MASTER_KEY=`cat config/master.key` RAILS_ENV=production BUNDLE_DISABLE_EXEC_LOAD=true",
     "heroku-setup": "yarn run -s heroku-clean; heroku create && yarn run -s heroku-envvar && git push heroku master"
   },
   "dependencies": {

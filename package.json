@@ -1,6 +1,17 @@
 {
   "name": "zygoto",
   "private": true,
+  "scripts": {
+    "docker-build": "docker build . -t zygoto-rails -f Dockerfile.dev",
+    "docker-list": "docker image list",
+    "docker-run": "docker run -p 3000:3000 -i -t zygoto-rails",
+    "docker-bash": "docker exec -it zygoto-rails bash",
+    "setup": "yarn run -s envvar-setup && yarn run -s heroku-setup",
+    "envvar-setup": "EDITOR='vim' rails credentials:edit",
+    "heroku-clean": "heroku apps:destroy; git remote remove heroku",
+    "heroku-envvar": "heroku config:set RAILS_MASTER_KEY=`cat config/master.key` && heroku config:set RAILS_ENV=production",
+    "heroku-setup": "yarn run -s heroku-clean; heroku create && yarn run -s heroku-envvar && git push heroku master"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
     "@rails/actioncable": "^6.0.0-alpha",

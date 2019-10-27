@@ -1,0 +1,9 @@
+{
+  "preferSingleQuotes": true,
+  "overrides": [{
+    "files": "*.rb",
+    "options": {
+      "preferSingleQuotes": false,
+    }
+  }]
+}

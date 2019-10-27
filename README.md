@@ -293,6 +293,23 @@ We need to 3 applications during development:
 - Sidekiq, that runs our background workers. It is not necessary to keep running it at every moment, only when you are developing something that needs the workers running. You will know when it becomes necessary. **Run it with** `sidekiq`.
 
 
+## Deploying to Heroku
+
+- Install the Heroku CLI, `brew tap heroku/brew && brew install heroku`;
+
+- Login on Heroku CLI, `heroku login`;
+
+- Create a project no Heroku, `heroku create`;
+
+  - This will output the URL to the Heroku git repository;
+
+- Add the Heroku git as a remote to your local project, `git remote add heroku https://git.heroku.com/the-previously-outputted.git`
+
+  - If you failed to do this previously you can try again by running `git remote remove heroku` first.
+
+- Deploy pushing to the new remote, `git push heroku master`.
+
+
 ## Running the tests locally
 
 - We need to set up a database where the tests will run. Just like we configured our development database **Run** `rails db:create db:migrate RAILS_ENV=test`;

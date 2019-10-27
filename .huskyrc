@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "pre-push": "echo '\nrun `git push --no-verify ...` to skip this git hook\n' && yarn run prettify",
+    "post-checkout": "yarnhook",
+    "post-merge": "yarnhook",
+    "post-rewrite": "yarnhook"
+  }
+}

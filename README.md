@@ -307,7 +307,9 @@ We need to 3 applications during development:
 
   - If you failed to do this previously you can try again by running `git remote remove heroku` first.
 
-- Deploy pushing to the new remote, `git push heroku master`.
+- Deploy pushing to the new remote, `git push heroku master`;
+
+  - You can deploy another branch using `git push heroku my-other-branch:master`
 
 
 ## Running the tests locally

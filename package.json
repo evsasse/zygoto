@@ -1,6 +1,10 @@
 {
   "name": "zygoto",
   "private": true,
+  "scripts": {
+    "start": "bin/webpack-dev-server",
+    "prettify": "yarn run prettier --write \"**/*.{js,rb}\" "
+  },
   "dependencies": {
     "@babel/preset-react": "^7.6.3",
     "@rails/actioncable": "^6.0.0-alpha",
@@ -15,6 +19,8 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@prettier/plugin-ruby": "^0.15.0",
+    "prettier": "^1.18.2",
     "webpack-dev-server": "^3.9.0"
   }
 }
